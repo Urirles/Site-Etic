@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Accueil</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="front-landing">
+       <div class="hima" id="mtitle">
+           <h2 class="h1" ><span>BIG DATA ET ANALYSE DU CRIME</span></h2>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.html" class="bouton">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle bouton" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphes<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="timeline.html">Frise chronologique</a></li>
+                <li><a href="debat.html">Arbre des débats</a></li>
+                <li><a href="acteur.html">Cartographie des acteurs</a></li>
+              </ul>
+              <li class=""><a href="humain.html" class="bouton">La place de l'humain</a></li>
+              <li class=""><a href="transpa.html" class="bouton">Transparence des algorithmes</a></li>
+              <li class=""><a href="discri.html" class="bouton">Discrimination</a></li>
+              <li class=""><a href="annexe.html" class="bouton">Annexe</a></li>
+
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="partie1">
+      <div class="container">
+        <div class="row" id="case">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+            <h2 class="titre">Les discriminations</h2>
+            <p class="para">
+              La plupart des algorithmes sont basée sur le principe du Machine Learning, c’est-à-dire qu’il prend des décisions seul, et potentiellement différente de celle qu’aurait pris un humain. Pour contrôler l’algorithme, notamment concernant la discrimination, le Conseil d’Etat précise dans son rapport un moyen simple de vérifier si l’algorithme n’est pas biaisé : il suffit de modifier certaines données renseignées et de regarder si l’algorithme produit le même résultat. Par exemple si l’algorithme décide que le suspect le plus probable d’avoir commis un crime est M. Dupond, il suffit de changer le sexe de M. Dupond dans les données et de regarder si le résultat est le même. Si Mme. Dupond est encore la suspecte la plus probable d’avoir commis le crime l’algorithme ne commet pas de discrimination illicite.  Ainsi, le Conseil d’Etat agit très fortement pour contrôler au mieux les algorithmes de police prédictive. <br><br>
+              Pourtant, les associations de défense contre le racisme dénoncent les discriminations liées à l’utilisation de ces logiciels. En effet, identifier les zones dites « à risque » peut conduire à des arrestations à vue. Si une patrouille doit intervenir dans une zone à risque, les policiers auront tendance à être plus dur que dans les zones « normales » ce qui constitue une forme de discrimination. <br><br>
+              Pour finir le collectif contre l’homophobie a joué un rôle très important dans la controverse car il a été au cœur du scandale autour du logiciel ARDOISE (Application de recueil de la documentation opérationnelle et d'informations statistiques sur les enquêtes).  En 2008, la police et la gendarmerie ont commencé à utiliser ce logiciel qui permettait de renseigner des informations comme « homosexuel », « relation habituelle avec personne prostituée » etc… Ces données sont dites sensibles et nécessitent impérativement le consentement de la CNIL pour être utilisées ou même les stockées. Cependant dans ce cas, elle n’a même pas été informée. Ceci a fortement inquiété le collectif de lutte contre l’homophobie qui a craint à une tentative de fichage de des individus homosexuels et a décidé de saisir la Haute Autorité de Lutte contre les Discriminations et pour l’Egalité pour s’opposer à la mise en place et à la généralisation de ce logiciel. La CNIL a réagi immédiatement en contactant la ministre de l’intérieur Michèle Alliot Marie et en lui rappelant les limites de tels logiciels. Celle-ci a bien assuré que le logiciel ne présentait aucun risque d’attenter à quelque liberté. <br><br>
+              Du côté des syndicats de police, le logiciel n’a pas non plus fait l’unanimité.  Les syndicats Unsa et Alliance (gardien de la paix) souhaitaient la modification du logiciel pour ne pas remettre en cause le droit des personnes. Alors que Synergiel ne souhaitait pas modifier l’algorithme. Le logiciel a finalement été suspendu par le ministre de l’intérieur ce qui satisfait les syndicats mécontents.  <br><br>
+              <!--Cet exemple illustre à quel point la frontière est faible entre l’utilisation des données dans un but proprement sécuritaire, et les dérives visant à « caractériser » la population.-->
+            </p>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+      </div>
+    </div>
+
+           
+
+    <footer>
+      <div class="copyright" id="case">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5">
+          <p> <b> Etic Telecom Paristech </b> <br/>46 rue Barrault, 75013 Paris</p>
+        </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/monjs.js"></script>
+  </body>
+</html>

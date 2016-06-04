@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Graphe des acteurs</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="front-landing">
+       <div class="hima" id="mtitle">
+           <h2 class="h1" ><span>BIG DATA ET ANALYSE DU CRIME</span></h2>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="index.html" class="bouton">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle bouton" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphes<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="timeline.html">Frise chronologique</a></li>
+                <li><a href="debat.html">Arbre des débats</a></li>
+                <li><a href="acteur.html">Cartographie des acteurs</a></li>
+              </ul>
+              <li class=""><a href="humain.html" class="bouton">La place de l'humain</a></li>
+              <li class=""><a href="transpa.html" class="bouton">Transparence des algorithmes</a></li>
+              <li class=""><a href="discri.html" class="bouton">Discrimination</a></li>
+              <li class=""><a href="annexe.html" class="bouton">Annexe</a></li>
+
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="partie1">
+      <div class="container">
+        <div class="row" id="case">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+              <div class="circle-container">
+                <button type="button" class="btn btn-primary btn-lg acteur" id="jus" data-toggle="modal" data-target="#justice">
+                  Justice
+                </button>
+                <div class="sg jus c" id="jus0"><p><br>Juriste : Mireille Delmas-Marty</p></div>
+                <div class="sg jus c" id="jus1"><p><br>Union syndicale des magistrats</p></div>
+                <div class="sg jus c" id="jus2"><p><br>Avocats</p></div>
+                <button type="button" class="btn btn-primary btn-lg acteur" id="fdo" data-toggle="modal" data-target="#force">
+                  Forces de <br> l'ordre
+                </button>
+                <div class="sg fdo p" id="fdo0"><p><br>Police américaine</p></div>
+                <div class="sg fdo p" id="fdo1"><p><br>Police <br> française</p></div>
+                <div class="sg fdo p" id="fdo2"><p><br>Gendarmerie <br> française </p></div>
+                <button type="button" class="btn btn-primary btn-lg acteur" id="gov" data-toggle="modal" data-target="#gouvernement">
+                  Institutions <br> Gouverne-<br>mentales
+                </button>
+                <div class="sg gov c" id="gov0"><p><br>Halde</p></div>
+                <div class="sg gov r" id="gov1"><p><br>Conseil d'état</p></div>
+                <div class="sg gov p" id="gov2"><p><br>Ministres de l'intérieur et de la justice</p></div>
+                <button type="button" class="btn btn-primary btn-lg acteur" id="oi" data-toggle="modal" data-target="#orga">
+                  Organismes <br>indépendants
+                </button>
+                <div class="sg oi r" id="oi0"><p><br><br>CNIL</p></div>
+                <div class="sg oi r" id="oi1"><p><br><br>G29</p></div>
+                <div class="sg oi c" id="oi2"><p><br><br>Conseil national du numérique</p></div>
+                <button type="button" class="btn btn-primary btn-lg acteur" id="aso" data-toggle="modal" data-target="#asso">
+                  Associations
+                </button>
+                <div class="sg aso c" id="aso0"><p><br>Collectif contre l'homophobie</p></div>
+                <div class="sg aso c" id="aso1"><p><br>Ligue des droits <br>de l'homme</p></div>
+                <button type="button" class="btn btn-primary btn-lg acteur" id="sit" data-toggle="modal" data-target="#scien">
+                  <p class="gb">Scientifiques <br>& intellectuels</p>
+                </button>
+                <button type="button" class="btn btn-primary btn-lg acteur" id="ent" data-toggle="modal" data-target="#entre">
+                  Entreprises
+                </button>
+                <div class="sg ent p" id="ent0"><p><br>PredPol</p></div>
+                <div class="sg ent p" id="ent1"><p><br>Safran</p></div>
+                <div class="sg ent p" id="ent2"><p><br>Entrepreneur : Giles Babinet</p></div>
+
+                <div class="txtacteur"><p><br><br>Cartographie<br> des acteurs</p></div>
+
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modales">
+      <div class="modal fade" id="justice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">La justice</h4>
+            </div>
+            <div class="modal-body"><p class="para">
+              Il ne faut pas oublier l’opinion des juristes, qui sont les acteurs ayant le plus tendance à émettre des réserves sur l’utilisation de ces types de logiciels. La juriste Mireille Delmas-Marty, met en garde fortement contre la prédiction dans le domaine juridique et policier. Laisser ces logiciels prendre le contrôle de nos décisions, constitue pour elle une atteinte aux droits fondamentaux de l’homme, et le déshumanise. « Prétendre prédire le passage à l’acte, détecter l’intention, c’est déjà une forme de déshumanisation parce que le propre de l’indétermination : sans indétermination, on n’est plus responsable de rien. ». Il est inconcevable pour elle de laisser un algorithme atteindre les droits humains de cette façon. Elle explique cependant qu’elle comprend le développement rapide de ces logiciels, en disant que « le monde, en devenant plus complexe, devient aussi imprévisible, et cette imprévisibilité attise les peurs de la société. La tentation est alors forte de glisser vers une société prédictive. ». Mais elle met tout de met en garde contre trop d’anticipation.<br><br>
+            </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="force" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Les forces de l'ordre</h4>
+            </div>
+            <div class="modal-body"><p class="para">
+              Nous avons décidé de nous limiter aux forces de police/gendarmerie. <br><br>
+              Le logiciel Palentir, utilisé par la National Security Agency (NSA) aux Etats-Unis, utilise des données individuelles, dans le but de ficher et de prédire l’évolution de certaines personnes suspectes. D’où notre décision d’ignorer les différents services de renseignement, qui ne ferait que compliquer de manière alarmante les questions posées ici.<br><br>
+              Aux Etats-Unis, les forces de police ont commencé à utiliser le logiciel de police prédictive en mai 2011. Ils utilisent un logiciel nommé PredPol qui a montré son efficacité en faisant diminué de 30% le nombre de cambriolages à Los Angeles en moins d’un an. Ainsi, la police est très largement en faveur de l’utilisation de tels logiciels car cela leur permet de mieux répartir leurs forces.<br><br>
+              Quant à elle, la police française a souvent paru loin derrière du point de vue de la police prédictive. Mais elle a annoncé en mai 2015 lors de l’inauguration du nouveau Pole Judiciaire de la gendarmerie nationale à Pontoise, que depuis fin 2014, la gendarmerie nationale utilisait son propre logiciel de police prédictive. L’idée de reprendre un algorithme existant déjà, vendu par une entreprise a été rejetée car la gendarmerie voulait quelque chose de plus adapté et spécifique à la France. De plus, si le code utilisé est gardé secret, le type de données utilisé a été divulguée. Les archives de police sont également utilisées, mais là où le système Français diffère des autres systèmes, c’est l’utilisation de données socio-économique, avec plus de 200 variables de l’INSEE.<br><br>
+              Il est cependant important de préciser que les forces de l’ordre sont pointilleuses sur la place que prend le logiciel dans leur travail. L’algorithme ne doit pas prendre la place du policier. De plus, c’est le rôle des policiers de vérifier la véracité des données injectées en entrée de l’algorithme d’après une proposition du Conseil d’Etat de 2014. Ils ont donc un rôle double : assurer la transparence des données injectées et juger de la décision fournie par l’algorithme. Ainsi, même si la limite de contrôle l’algorithme est parfois questionnée, notamment par les associations de défense des droits de l’homme, la police reste ancrée sur ses positions et affirme que c’est bien eux qui contrôlent l’algorithme et non l’inverse.
+            </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="gouvernement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Les institutions gouvernementales</h4>
+            </div>
+            <div class="modal-body"><p class="para">
+              Le Conseil d’Etat, institution publique française qui a pour rôle de conseiller le gouvernement, se place en faveur de la limitation de l’utilisation de tels logiciels. Il veut plus précisément limiter le pouvoir de décision des logiciels. Dans un rapport publié en 2014 intitulé le numérique et les droits fondamentaux « Pour assurer l’effectivité de l’interdiction de fonder une décision sur la seule mise en oeuvre d’un traitement automatisé, confirmer que l’intervention humaine dans la décision doit être réelle et pas seulement formelle. » <br><br>
+              D’après ce rapport, l’humain doit aussi intervenir dans un second temps, il doit assurer la véracité des informations. Ce point a pour but d’assurer la transparence de l’algorithme. C’est donc le Conseil d’Etat qui impose légalement l’intervention de la police dans la prise de décision. <br><br>
+              Aussi, la plupart des algorithmes sont basée sur le principe du Machine Learning, c’est-à-dire qu’il prend des décisions seul, et potentiellement différente de celle qu’aurait pris un humain. Pour contrôler l’algorithme, notamment concernant la discrimination, le Conseil d’Etat précise dans son rapport un moyen simple de vérifier si l’algorithme n’est pas biaisé : il suffit de modifier certaines données renseignées et de regarder si l’algorithme produit le même résultat. Par exemple si l’algorithme décide que le suspect le plus probable d’avoir commis un crime est M. Dupond, il suffit de changer le sexe de M. Dupond dans les données et de regarder si le résultat est le même. Si Mme. Dupond est encore la suspecte la plus probable d’avoir commis le crime l’algorithme ne commet pas de discrimination illicite.<br><br>
+              Ainsi, le Conseil d’Etat agit très fortement pour contrôler au mieux les algorithmes de police prédictive.
+            </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="orga" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Les organismes indépendants</h4>
+            </div>
+            <div class="modal-body"><p class="para">
+              Le principale organisme indépendant à travailler sur ce sujet est la CNIL : la Commission Nationale de l’Informatique et des Libertés. C’est cet organisme qui limite l’utilisation et le débordement de l’utilisation de ce logiciel. Cette commission a été créée en 1978 suite au Privacy Act aux Etats Unis qui interdit aux agences de publier des informations sur des individus sans une autorisation écrite, et qui limite l’utilisation des données de manière générale. Par exemple, c’est la CNIL qui justifie juridiquement l’utilisation de données personnelles dans un cadre spécial. La CNIL a donc pour rôle de contrôler et de fixer des limites aux polices prédictives pour assurer la bonne utilisation des données et en limiter l’accès.
+            </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="asso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Les associations</h4>
+            </div>
+            <div class="modal-body"><p class="para">
+              
+              Du côté des syndicats de police, le logiciel n’a pas non plus fait l’unanimité. Les syndicats Unsa et Alliance (gardien de la paix) souhaitaient la modification du logiciel pour ne pas remettre en cause le droit des personnes. Alors que Synergiel ne souhaitait pas modifier l’algorithme. Le logiciel a finalement été suspendu par le ministre de l’intérieur ce qui satisfait les syndicats mécontents.<br><br>
+              Enfin, les associations de défense contre le racisme dénoncent les discriminations liées à l’utilisation de ces logiciels. En effet, identifier les zones dites « à risque » peut conduire à des arrestations à vue. Si une patrouille doit intervenir dans une zone à risque, les policiers auront tendance à être plus dur que dans les zones « normales » ce qui constitue une forme de discrimination.<br><br>
+              Pour finir le collectif contre l’homophobie a joué un rôle très important dans la controverse car il a été au coeur du scandale autour du logiciel ARDOISE (Application de recueil de la documentation opérationnelle et d'informations statistiques sur les enquêtes). En 2008, la police et la gendarmerie ont commencé à utiliser ce logiciel qui permettait de renseigner des informations comme « homosexuel », « relation habituelle avec personne prostituée » etc… Ces données sont dites sensibles et nécessitent impérativement le consentement de la CNIL pour être utilisées ou même les stockées. Cependant dans ce cas, elle n’a même pas été informée. Ceci a fortement inquiété le collectif de lutte contre l’homophobie qui a craint à une tentative de fichage de des individus homosexuels et a décidé de saisir la Haute Autorité de Lutte contre les Discriminations et pour l’Egalité pour s’opposer à la mise en place et à la généralisation de ce logiciel. La CNIL a réagi immédiatement en contactant la ministre de l’intérieur Michèle Alliot Marie et en lui rappelant les limites de tels logiciels. Celle-ci a bien assuré que le logiciel ne présentait aucun risque d’attenter à quelque liberté.<br><br>
+              Cet exemple illustre à quel point la frontière est faible entre l’utilisation des données dans un but proprement sécuritaire, et les dérives visant à « caractériser » la population.
+            </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="scien" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Scientifiques et intelectuels</h4>
+            </div>
+            <div class="modal-body"><p class="para">
+              De nombreux chercheurs et sociologues s’inquiètent du manque de transparence des algorithmes. En effet comment savoir si l’on peut se fier aux résultats d’un logiciel si l’on ne sait pas ce que ce logiciel utilise comme données pour atteindre ce résultat. Les chercheurs sur le sujet plaident pour plus de transparence pour tenter de faire disparaitre la peur des citoyens français ou américains. Selon Jeff Brantingham, professeur d’anthropologie à UCLA et ayant travaillé sur le projet Predpol : « Il faut de la transparence pour que les gens comprennent que notre logiciel (PredPol), ce n’est pas Minority Report ». Ainsi, les citoyens ont peur d’être contrôlés par un logiciel de police prédictive et cette peur est en grande partie motivée par le manque de transparence des logiciels.<br><br>
+              Le point de vue des sociologues, tel que Bilel Benbouzid, maitre en conférence en sociologie à l’université Paris-Est, s’intéresse beaucoup plus à la méthode utilisée par les logiciels et leur légitimité. Il trouve que les modèles théoriques utilisés sont beaucoup trop simplistes, et trouve ceux qui travaillent sur ces projets arrogants de prétendre prédire les comportements de cette façon. Son explication est la suivante : « On est dans une forme de solutionisme. Des ingénieurs très empiristes et très inductivistes pensent à nouveau, comme au début du XIXe siècle, qu’on peut résoudre des problèmes sociaux grâce à des solutions technologiques, dont il ne faudrait surtout pas discuter les fondements idéologiques et politiques ». Pour lui, cela parait bien excessif.<br><br>
+              Aussi les avocats comme Alain Bensoussan, avocat à la Cour d’appel de Paris, spécialiste en droit des nouvelles technologies de l’informatique et de la communication, ainsi qu’en droit international et de l’Union européenne, est en total accord avec les recommandations issues du rapport du conseil d’Etat sur le numérique et les droits fondamentaux sur le contrôle juridique de l’algorithme.<br><br>
+              
+            </p></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="entre" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Les entreprises</h4>
+            </div>
+            <div class="modal-body"><p class="para">
+              Un groupe d'acteurs importants est les entreprises qui développent les logiciels de police prédictive. La plus connue est PredPol car c’est elle qui a développé, en 2011, le logiciel (du même nom) le plus utilisé aux Etats Unis. Le code de l’algorithme est gardé secret, mais on sait que les chercheurs ayant travaillé dessus se sont inspirés de logiciels censés prévoir les secousses sismiques, et utilise uniquement des données d’archives policières sur des infractions passées.<br><br>
+              Cependant, Predpol n’est pas la seule entreprise proposant ce type de logiciel, et d’autres villes ont travaillé pour le développement de leur propre algorithme, comme le logiciel SeaSat à Seattle. Et ce type de logiciel ne se vend pas seulement à des villes Américaines, mais aussi dans des villes Anglaises, Allemandes ou même Chinoises.<br><br>
+              Comme on l’a vu, pour la France, c’est la gendarmerie qui élabore elle-même son logiciel. Mais tout de même, Il existe en France un projet développé par un des laboratoires de l’Institut Mines-Telecom, en partenariat avec Safran, qui affirme pouvoir obtenir des résultats bien meilleurs que les logiciels actuellement utilisés, en utilisant des données personnelles issus entre autres de réseaux sociaux tels que Facebook ou Twitter.<br><br>
+              Ces entreprises restent relativement peu transparentes sur la manière dont ils utilisent les données. En effet, aucune information sur le code lui-même n’est actuellement disponible. Ce manque de transparence ne nous permet pas de connaitre la position des entreprises par rapport à la controverse. Deux raisons majeures expliquent l’opacité des logiciels : la première est le secret professionnel et la concurrence entre les différentes entreprises. La deuxième raison est d’assurer le bon fonctionnement de l’algorithme. En effet, s’il est rendu public il est possible de savoir quelles données il est possible de changer pour s’assurer de ne jamais être suspecté par l’algorithme. Ainsi l’algorithme pourrait être manipulé afin d’échapper à la justice et deviendrait donc obsolète pour la police.<br><br>
+              Cependant, on peut aisément faire l’hypothèse que les entreprises sont plutôt en faveur du développement de tels logiciels car ils constituent une très grande partie de leur chiffre d’affaire.
+            </p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+           
+
+    <footer>
+      <div class="copyright" id="case">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5">
+          <p> <b> Etic Telecom Paristech </b> <br/>46 rue Barrault, 75013 Paris</p>
+        </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/monjs.js"></script>
+  </body>
+</html>
